@@ -1,0 +1,27 @@
+--cpu=Cortex-M4.fp
+"catalyst\startup_stm32f407xx.o"
+"catalyst\system_stm32f4xx.o"
+"catalyst\stm32f4xx_hal_dac_ex.o"
+"catalyst\stm32f4xx_hal_rcc.o"
+"catalyst\stm32f4xx_hal_pwr.o"
+"catalyst\stm32f4xx_hal_rcc_ex.o"
+"catalyst\stm32f4xx_hal_dma.o"
+"catalyst\stm32f4xx_hal_uart.o"
+"catalyst\stm32f4xx_hal_pwr_ex.o"
+"catalyst\stm32f4xx_hal_dac.o"
+"catalyst\stm32f4xx_hal_flash_ramfunc.o"
+"catalyst\stm32f4xx_hal_gpio.o"
+"catalyst\stm32f4xx_hal_flash.o"
+"catalyst\stm32f4xx_hal_cortex.o"
+"catalyst\stm32f4xx_hal.o"
+"catalyst\stm32f4xx_hal_tim.o"
+"catalyst\stm32f4xx_hal_dma_ex.o"
+"catalyst\stm32f4xx_hal_tim_ex.o"
+"catalyst\stm32f4xx_hal_flash_ex.o"
+"catalyst\stm32f4xx_hal_msp.o"
+"catalyst\stm32f4xx_it.o"
+"catalyst\main.o"
+--library_type=microlib --strict --scatter "Catalyst\Catalyst.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "Catalyst.map" -o Catalyst\Catalyst.axf
